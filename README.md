@@ -22,3 +22,22 @@ The energy is distributed amongst the 12 cells (and the first cell of the next b
 The result is pleasing.  The variation of the Average Paired Ah from one group to another was only 100mA with many being within 10mAh.
 
 
+![300 LTO Cells](https://github.com/mackelec/cellSorter/blob/main/P1080219.jpg)
+
+
+### Brute Force won't work
+
+I quickly realized that brute force algoithm will not work
+
+Npairings = n! / (m!*2^m)
+
+where n=300 and m=150
+
+This results in a very large number of iterations !!!
+
+### Method
+
+
+
+
+
