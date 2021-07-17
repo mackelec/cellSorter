@@ -11,7 +11,7 @@ import copy
 import statistics
 
 # Sets array stipulates the number of cells within a Balancing Group.
-sets = [10,8,12,12,12,12, 12,12,12,12,12,12,12]
+sets = [10,12,12,12,12,12, 12,12,12,12,12,10,10]
 
 print('cell Sorter\n')
 with open('LTOcells.csv',newline='') as csvfile:
@@ -118,7 +118,7 @@ for pr in allocatedPairs:
           pr[3],',',
           pr[4],',',
           pr[5],',',
-          pr[6],',',
+          round(pr[6],2),',',
           pr[7]
           )
                 
