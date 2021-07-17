@@ -13,7 +13,7 @@ import statistics
 # Sets array stipulates the number of cells within a Balancing Group.
 sets = [10,12,12,12,12,12, 12,12,12,12,12,10,10]
 
-print('cell Sorter\n')
+print('cell Sorter\n\n')
 with open('LTOcells.csv',newline='') as csvfile:
     cellReader = csv.reader(csvfile)
     bcells = list(map(tuple,cellReader))
@@ -21,6 +21,9 @@ bcells_up = sorted(bcells,key=lambda tup:tup[1])
 bcells_dn = sorted(bcells,key=lambda tup:tup[1],reverse=True)
 # print ('sorted =',len(bcells_up))
 # print ('sorted =',len(bcells_dn))
+
+print('Cell count = ',len(bcells),'   cell pairs = ',len(bcells)/2)
+print('Groups count = ',sum(sets),'\n\n')
 
 pairs=[]
 pairStats=[]
@@ -41,9 +44,9 @@ pairVariance = statistics.variance(pairStats)
 pairMean = statistics.mean(pairStats)
 pairSD = statistics.stdev(pairStats)
 
-print('Variance = ',pairVariance)
-print('Mean = ',pairMean)
-print('St Dev = ',pairSD)
+print('Variance = ',int(pairVariance))
+print('Mean = ',round(pairMean,1))
+print('St Dev = ',int(pairSD))
 
 pairs_sd = []
 for row in pairs:
