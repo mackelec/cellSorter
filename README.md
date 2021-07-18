@@ -41,13 +41,13 @@ This results in a very large number of iterations !!!
 I used a simple method of pairing the cells.  I matched the smallest cell with the largest Cell, then the next and so on.  It's not perfect but it's very close.
 
 ##### Grouping 
-This is a little bit more interesting.  I calculate the Standard Deviation of each pair, sort the pairs from highest to lowest SD.  I then in a serpintine pattern, sequentially allocated the pair to each group, thus getting a some what approximate spread of pairs into each group.  Again not perfect - but pretty close.
+This is a little bit more interesting.  I calculate the Standard Deviation of each pair, sort the pairs from highest to lowest SD.  I then in a serpintine pattern, sequentially allocated the pair to each group, thus getting a somewhat approximate spread of pairs into each group.  Again not perfect - but pretty close.
 
 ### Why python
 
 Why not :-)
-Well, I proved it in Open office Calc first, but this proved to be a lot of work for each group.
+Well, I proved the concept in Openoffice Calc first, but this proved to be a lot of work for each group.
 
-I have never written a program in Python before so I thought this was an ideal little project.   I still prefer C but Python presented no problem and I enjoyed useing the light-weight IDE.
+Having experience in assembler, Fortran, Dbase, C#, but mostly C I was still a Python virgin.  This was an ideal little project for Python.   I still prefer C but Python presented no problem and I enjoyed using the light-weight IDE.
 
 
